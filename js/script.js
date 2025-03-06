@@ -2,16 +2,16 @@
 //money, inventory, jackpot
 (function(){
 var itemCounter = 0;
-var fps = 15;
+var fps = 30;
 
-var money = 7.50;
+var money = 1000;
 var username = localStorage.getItem('username');
 if (localStorage.getItem("username") === null) {
 	localStorage.setItem('username' , "Player 1 (You)")
 }
 var useravatar = localStorage.getItem('imgData');
 if (localStorage.getItem("imgData") === null) {
-	localStorage.setItem("imgData" , "https://i.imgur.com/ICK2lr1.jpg")
+	localStorage.setItem("imgData" , "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsVk5kKhZDpYX3e1YznfCcdzkR74vnw9TZwa-sYOOCzzoF6ZJ0jL6Qp9uj3Qbj_Uc6Z2z1I9WLMlhp9VPHu3g")
 }
 
 var currentCase = "case1";
@@ -23,7 +23,7 @@ var acceptMoneyPerClick = 0.1;
 
 
 //sorting: by money, rarity
-var popup = true;
+var popup = false;
 var unboxsound = true;
 var menusound = true;
 var lostsound = true;
@@ -34,7 +34,7 @@ var acceptedsound = true;
 var inventory = {};
 var jackpotInventory = {};
 
-var inventoryMax = 50;
+var inventoryMax = 5000;
 var inventoryCurrent = 0;
 
 var keyPrice = 2.50;
