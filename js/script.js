@@ -23445,7 +23445,7 @@ $(".caseContainer").on('click', '.case', function() {
 var jackpotUnlocked = true;
 var jackpotInProgress = false;
 var swapSkins = 0;
-var maxSwapSkins = 15;
+var maxSwapSkins = 100;
 var swapSkinsValue = 0;
 var jackpotSelectedInventory = {};
 var jackpotDifficulty = "low";
@@ -23734,7 +23734,7 @@ function jackpotStart() {
 	var playerTickets = 0;
 	var totalTickets = 0;
 	var jackpotItemCounter = 0;
-	var jackpotTimerCounter = 60;
+	var jackpotTimerCounter = 1;
 	var depositTicker = 0;
 	var AIKeys = JSON.parse(JSON.stringify(jackpotPots[jackpotDifficulty]));
 
