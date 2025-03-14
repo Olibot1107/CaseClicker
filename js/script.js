@@ -24,12 +24,12 @@ var acceptMoneyPerClick = 0.1;
 
 //sorting: by money, rarity
 var popup = false;
-var unboxsound = true;
-var menusound = true;
-var lostsound = true;
-var botsound = true;
-var wonsound = true;
-var acceptedsound = true;
+var unboxsound = false;
+var menusound = false;
+var lostsound = false;
+var botsound = false;
+var wonsound = false;
+var acceptedsound = false;
 
 var inventory = {};
 var jackpotInventory = {};
